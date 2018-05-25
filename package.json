@@ -1,5 +1,5 @@
 {
-  "name": "redux-course",
+  "name": "todo-antd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "json-server --static ./build db.json",
+    "start": "json-server -p 3001 --static ./build db.json",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

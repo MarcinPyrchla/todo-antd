@@ -12,7 +12,7 @@
     },
     {
       "name": "Yet another task to do",
-      "isComplete": true,
+      "isComplete": false,
       "id": 10
     },
     {
@@ -22,12 +22,12 @@
     },
     {
       "name": "This is yet another task to be done",
-      "isComplete": true,
+      "isComplete": false,
       "id": 12
     },
     {
       "name": "another task",
-      "isComplete": false,
+      "isComplete": true,
       "id": 13
     },
     {

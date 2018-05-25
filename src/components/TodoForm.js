@@ -4,6 +4,7 @@ import Icon from 'antd/lib/icon';
 import {notification} from 'antd';
 import {connect} from 'react-redux';
 import {updateCurrent, saveTodo} from '../reducers/todo';
+import {showMessage, MESSAGE_ERROR} from '../reducers/messages';
 
 
 class TodoForm extends Component {
@@ -17,15 +18,18 @@ class TodoForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    if( this.props.currentTodo ) {
+    if( this.props.currentTodo.length >= 5 ) {
       this.props.saveTodo(this.props.currentTodo);
     } else {
-      notification.error({
-        placement: 'bottomRight',
-        //duration: 0,
-        message: 'Task is empty',
-        //description: 'This is just an info'
+
+      const {showMessage} = this.props;
+
+      showMessage({
+        type: MESSAGE_ERROR,
+        title: 'Error',
+        description: 'Task has to be at least 5 chars long'
       });
+
     }
   }
 
@@ -50,5 +54,5 @@ class TodoForm extends Component {
 
 export default connect(
   (state) => ({currentTodo: state.todo.currentTodo}),
-  {updateCurrent, saveTodo}
+  {updateCurrent, saveTodo, showMessage}
 )(TodoForm);

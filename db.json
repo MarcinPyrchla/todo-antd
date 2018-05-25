@@ -2,12 +2,12 @@
   "todos": [
     {
       "name": "Yet another task",
-      "isComplete": true,
+      "isComplete": false,
       "id": 7
     },
     {
       "name": "this is another task",
-      "isComplete": false,
+      "isComplete": true,
       "id": 8
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "name": "This is yet another task to be done",
-      "isComplete": false,
+      "isComplete": true,
       "id": 12
     },
     {

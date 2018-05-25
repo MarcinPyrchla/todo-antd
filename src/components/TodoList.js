@@ -30,7 +30,7 @@ class TodoList extends Component {
   }
 
   render() {
-    //console.log("Render list");
+    
     return (
       <div className="Todo-List">
         <ul>

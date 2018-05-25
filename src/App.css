@@ -57,7 +57,7 @@ ul li {
   padding-top: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 .filter {

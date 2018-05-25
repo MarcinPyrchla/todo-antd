@@ -54,15 +54,32 @@ export const fetchTodos = () => {
 }
 
 export const saveTodo = (name) => {
-  return (dispatch) => {
-    dispatch(showMessage({
-      type: MESSAGE_INFO,
-      title: 'Saving Todo',
-      description: `Saving '${name}'`
-    }));
+  return (dispatch, getState) => {
 
-    createTodo(name)
-      .then( res => dispatch(addTodo(res)) )
+    const {todos} = getState().todo;
+
+    if( todos.findIndex(t => t.name.toLowerCase() === name.toLowerCase() ) !== -1 ) {
+
+      dispatch(showMessage({
+        type: MESSAGE_WARNING,
+        title: 'Already Exists',
+        description: `Todo '${name}' already exists`
+      }));
+
+    } else {
+
+      dispatch(showMessage({
+        type: MESSAGE_INFO,
+        title: 'Saving Todo',
+        description: `Saving '${name}'`
+      }));
+
+      createTodo(name)
+        .then( res => dispatch(addTodo(res)) );
+
+    }
+
+
   }
 }
 

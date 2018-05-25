@@ -28,9 +28,6 @@ export default function(state = initState, action) {
   switch(action.type) {
     case MESSAGE_SHOW:
 
-      //console.log(action.payload);
-      //console.log(action.payload.description);
-
       notification[action.payload.type]({
         placement: 'topRight',
         //duration: 0,
@@ -39,14 +36,6 @@ export default function(state = initState, action) {
       });
 
       return action.payload;
-
-    /*
-    case TODO_ADD:
-    case TODOS_LOAD:
-    case TODO_REPLACE:
-    case TODO_REMOVE:
-      return '';
-    */
 
     default:
       return state;

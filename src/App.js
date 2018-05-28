@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './css/main.css';
@@ -23,9 +23,11 @@ class App extends Component {
         <Router>
           <div className="Todo-App">
             <TodoForm />
-            <Filter />
             <Route path='/:filter?' render={({match}) => (
-              <TodoList filter={match.params.filter}/>
+              <Fragment>
+                <Filter filter={match.params.filter}/>
+                <TodoList filter={match.params.filter}/>
+              </Fragment>
             )}>
             </Route>
           </div>

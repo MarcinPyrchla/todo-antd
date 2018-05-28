@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 
 const Footer = ({all, active, completed}) => (
-  <div className='filter'>
+  <div className='footer'>
     {completed} tasks done. {active} tasks to do out of {all}.
   </div>
 )

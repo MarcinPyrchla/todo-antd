@@ -5,7 +5,8 @@ p {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: whitesmoke; }
 
 .App {
   text-align: center; }
@@ -46,13 +47,20 @@ body {
   .Todo-App ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }
     .Todo-App ul li {
-      padding-bottom: 20px;
-      padding-top: 10px;
-      margin-bottom: 10px;
+      padding: 20px;
       border-bottom: 1px solid #eee;
       /*text-transform: capitalize;*/ }
+      .Todo-App ul li:last-child {
+        border-bottom-width: 0px; }
       .Todo-App ul li span.delete-item {
         float: right;
         position: relative;
@@ -69,5 +77,11 @@ body {
     .Todo-App .filter a {
       padding-right: 10px;
       margin-right: 10px; }
+      .Todo-App .filter a.current-link {
+        text-decoration: underline;
+        font-weight: bold; }
     .Todo-App .filter .ant-scroll-number-only > p {
       line-height: 22px; }
+
+.footer {
+  padding: 30px; }

@@ -1,8 +1,9 @@
 @import 'vars';
+@import 'mixins';
 @import 'typography';
 @import 'base';
 
-@import '~antd/dist/antd.css'; 
+@import '~antd/dist/antd.css';
 
 @import 'elements/header';
 @import 'elements/todo-list';

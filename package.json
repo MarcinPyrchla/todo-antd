@@ -17,10 +17,14 @@
   },
   "scripts": {
     "start": "json-server -p 3001 --static ./build db.json",
-    "dev": "react-scripts start",
+    "dev": "react-scripts start | json-server -p 8080 db.json",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "server": "json-server -p 8080 db.json"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }

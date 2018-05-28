@@ -2,7 +2,7 @@
   "todos": [
     {
       "name": "Yet another task",
-      "isComplete": false,
+      "isComplete": true,
       "id": 7
     },
     {
@@ -11,29 +11,24 @@
       "id": 8
     },
     {
-      "name": "Yet another task to do",
-      "isComplete": true,
-      "id": 10
-    },
-    {
-      "name": "This is yet another task to be done",
-      "isComplete": true,
-      "id": 12
-    },
-    {
       "name": "Something to do",
-      "isComplete": true,
+      "isComplete": false,
       "id": 14
     },
     {
       "name": "This is another task",
-      "isComplete": false,
+      "isComplete": true,
       "id": 15
     },
     {
       "name": "asasdasd",
       "isComplete": true,
       "id": 16
+    },
+    {
+      "name": "interesting another task",
+      "isComplete": false,
+      "id": 17
     }
   ]
 }

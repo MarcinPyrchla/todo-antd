@@ -1,0 +1,60 @@
+
+.Todo-App {
+  padding-top: 35px;
+  width: 600px;
+  margin: auto;
+  text-align: left;
+
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-bottom: 20px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      /*text-transform: capitalize;*/
+
+      span.delete-item {
+        float: right;
+        position: relative;
+        top: -5px;
+        padding-right: 0;
+      }
+
+      .ant-checkbox-checked + span {
+        color: #999;
+        text-decoration: line-through;
+      }
+
+    }
+
+  }
+
+  .filter {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .ant-badge {
+      margin-right: 40px;
+    }
+
+    a {
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+    .ant-scroll-number-only > p {
+      line-height: 22px;
+    }
+
+  }
+
+}

@@ -1,0 +1,73 @@
+@import url(~antd/dist/antd.css);
+p {
+  margin-bottom: 1em; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  float: left; }
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 20px;
+  line-height: 45px;
+  color: white;
+  float: left; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.Todo-App {
+  padding-top: 35px;
+  width: 600px;
+  margin: auto;
+  text-align: left; }
+  .Todo-App input[type="text"] {
+    width: 100%; }
+  .Todo-App ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .Todo-App ul li {
+      padding-bottom: 20px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      /*text-transform: capitalize;*/ }
+      .Todo-App ul li span.delete-item {
+        float: right;
+        position: relative;
+        top: -5px;
+        padding-right: 0; }
+      .Todo-App ul li .ant-checkbox-checked + span {
+        color: #999;
+        text-decoration: line-through; }
+  .Todo-App .filter {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .Todo-App .filter .ant-badge {
+      margin-right: 40px; }
+    .Todo-App .filter a {
+      padding-right: 10px;
+      margin-right: 10px; }
+    .Todo-App .filter .ant-scroll-number-only > p {
+      line-height: 22px; }

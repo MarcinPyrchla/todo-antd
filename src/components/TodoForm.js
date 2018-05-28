@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Input from 'antd/lib/input';
 import Icon from 'antd/lib/icon';
-import {notification} from 'antd';
 import {connect} from 'react-redux';
 import {updateCurrent, saveTodo} from '../reducers/todo';
 import {showMessage, MESSAGE_ERROR} from '../reducers/messages';
